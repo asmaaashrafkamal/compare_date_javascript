@@ -1,0 +1,38 @@
+<html>
+<head> Comparing Dates</br></head>
+<body>
+<script>
+function compare()
+{
+var d1=new Date('2020-11-10'); //yyyy-mm-dd
+var d2=new Date('2020-01-21'); //yyyy-mm-dd
+if(d1>d2)
+{
+document.write("True, First date is greater than second date");
+}
+else if(d1<d2)
+{
+document.write("False, Second date is smaller than the first");
+}
+else
+{
+document.write("Both date are same and equal");
+}
+}
+
+var firstDay = new Date();
+var nextWeek = new Date(firstDay.getTime() - 7 * 24 * 60 * 60 * 1000);
+console.log(nextWeek)
+console.log(nextWeek.getDate())
+console.log(nextWeek.getMonth()+1)
+console.log(nextWeek.getFullYear())
+var yesterday = new Date();
+var yesterday1 = new Date(yesterday.getTime() - 1 * 24 * 60 * 60 * 1000);
+console.log(yesterday1)
+console.log(yesterday1.getDate())
+console.log(yesterday1.getMonth()+1)
+console.log(yesterday1.getFullYear())
+compare(); //invoking compare()
+</script>
+</body>
+</html>
